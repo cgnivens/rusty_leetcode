@@ -75,4 +75,12 @@ mod tests {
         assert_eq!(new_len, 5);
         assert_eq!(my_array, [1, 1, 2, 2, 3]);
     }
+
+    #[test]
+    fn empty_test() {
+        let mut my_array = vec![];
+        let new_len = Solution::remove_duplicates(&mut my_array);
+        assert_eq!(new_len, 0);
+        assert_eq!(my_array, vec![]);
+    }
 }   
