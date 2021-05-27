@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+// Otherwise it will complain. How I loathe these leetcode Solution objects
 pub struct Solution {}
 
 pub fn create_counter(nums: &mut Vec<i32>) -> HashMap<i32, usize> {
