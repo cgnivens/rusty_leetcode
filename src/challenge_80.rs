@@ -50,8 +50,11 @@ impl Solution {
                         *val -= 1;
                     }
                     let _ = nums.remove(i);
+                    // don't increment index, nums has decreased in length, so we stay at
+                    // our current spot
                     0
                 } else {
+                    // otherwise, increment the index, we haven't mutated the vec
                     1
                 }
             };
